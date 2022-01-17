@@ -1,4 +1,4 @@
-module.exports = (x, y, callback) => {
+export default (x, y, callback) => {
   if (x <= 0 || y <= 0) {
     callback(new Error(`Rectangle dimensions must be greater than zero. Received: ${x}, ${y}`)); // error object is first argument in error callback
   } else {
@@ -11,4 +11,3 @@ module.exports = (x, y, callback) => {
     );
   }
 };
-
